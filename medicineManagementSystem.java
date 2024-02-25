@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 class Medicine {
     private String name;
@@ -65,13 +65,13 @@ class MedicineStore {
         System.out.println("Inventory:");
         for (Medicine medicine : inventory) {
             System.out.println("Medicine: " + medicine.getName() +
-                    ", Price: $" + medicine.getPrice() +
+                    ", Price: Rs" + medicine.getPrice() +
                     ", Quantity: " + medicine.getQuantity());
         }
     }
 
     public void displayRevenue() {
-        System.out.println("Total Revenue: $" + revenue);
+        System.out.println("Total Revenue: Rs:" + revenue);
     }
 }
 
